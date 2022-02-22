@@ -1,4 +1,4 @@
-package afterclass;
+package assignment.week2fully;
 
 import java.time.Duration;
 
@@ -17,6 +17,7 @@ public class CreateContact {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get("http://leaftaps.com/opentaps/control/login");
+
 		driver.findElement(By.id("username")).sendKeys("demosalesmanager");
 		driver.findElement(By.id("password")).sendKeys("crmsfa");
 		driver.findElement(By.className("decorativeSubmit")).click();
